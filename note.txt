@@ -1,0 +1,15 @@
+-A quoi sert Composer ?
+    Il permet à ses utilisateurs de déclarer et d'installer les bibliothèques requises par le projet principal. 
+    Cela évite aux développeurs d'avoir à utiliser toutes les bibliothèques qu'ils utilisent pour distribuer leurs projets.
+
+Equivalent composer :
+    -Pip pour Python
+    -Dep pour Golang
+
+Composer.json:
+
+    Composer.json est le fichier ou on déclare les dependance d'un projet. 
+    C'est pour cela qu'on le place dans la racine du pojet php.
+
+Composer.lock:
+    Composer.lock est le fichier ou on stocke les version exacte des depandance du projet.
