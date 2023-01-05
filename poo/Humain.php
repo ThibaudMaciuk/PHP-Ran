@@ -1,42 +1,57 @@
 <?php
-
 class Humain
 {
-    public $taille = 172;
-    public $nom;
-    public function marcher()
-    {
-        echo "Je marche";
-    }
-    public function maTaille()
-    {
-        echo ($this->taille+1);
-    }
-    public function __construct(string $nomDeFamille)
-    {
-        echo "Je suis né.e";
-        $this->nom = $nom." ".$nomDeFamille;
-    }
-    public function __destruct()
-    {
-        echo "Je suis mort.e";
-    }
+	private $secret;
+	public function setSecret($secret)
+	{
+		$this->secret = $secret;
+		return $this->secret;
+	}
+
+	public function getSecret()
+	{
+		echo $this->secret;
+	}
+
+    	public $taille = 172;
+    	public $nom;
+    	public function marcher()
+    	{
+        	echo "Je marche";
+    	}
+    	public function maTaille()
+    	{
+        	echo ($this->taille+1);
+    	}
+    	public function __construct($nomDeFamille)
+    	{
+			$this->nom = $this->nom ." ".$nomDeFamille;
+        	echo "Je suis né.e";
+    	}
+    	public function __destruct()
+    	{
+        	echo "Je suis mort.e";
+    	}
 }
-$marcelline = new Humain(randomeNom(10));
+
+$marcelline = new Humain("Bernard");
 echo "\r\n";
-$constance = new Humain(randomeNom(10));
+$constance = new Humain("PasBernard");
 echo "\r\n";
 
 echo $marcelline->marcher();
 echo "\r\n";
-echo nl2br($marcelline->taille);
+echo $marcelline->maTaille();
 echo "\r\n";
-echo nl2br($constance->marcher());
+echo $constance->marcher();
 echo "\r\n";
-echo nl2br($constance->taille);
-echo "\r\n"; 
-echo nl2br($marcelline->maTaille());
+echo $constance->maTaille();
 echo "\r\n";
-echo nl2br($constance->maTaille()); 
+echo $constance->setSecret('hey');
 echo "\r\n";
-unset ($constance);
+echo $marcelline->setSecret('aie');
+echo "\r\n";
+echo $constance->getSecret();
+echo "\r\n";
+echo $marcelline->getSecret();
+echo "\r\n";
