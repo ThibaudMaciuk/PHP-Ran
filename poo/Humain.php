@@ -1,6 +1,8 @@
 <?php
-class Humain
+abstract class Humain
 {
+	use bipede;
+	public static $population = 0;
 	public $force = 1;
 	private $secret;
 	public function setSecret($secret)
@@ -29,11 +31,16 @@ class Humain
 			$this->nom = $this->nom ." ".$nomDeFamille;
         	echo "Je suis né.e";
 			echo "\r\n";
+			self::$population++;
+			echo "Il y a ".self::$population." humain.e.s";
     	}
     	public function __destruct()
     	{
+			echo "\r\n";
         	echo "Je suis mort.e";
 			echo "\r\n";
+			self::$population--;
+			echo "Il y a ".self::$population." humain.e.s";
     	}
 }
 
@@ -55,6 +62,10 @@ class Femme extends Humain
 	{
 		return $this->force;
 	}
+	public function faireEnfant()
+	{
+		echo'Oui je peux enfanté';
+	}
 }
 
 class Homme extends Humain
@@ -74,7 +85,13 @@ class Homme extends Humain
 	}
 }
 
-
+trait Bipede
+{
+	public function courir()
+	{
+		echo "Je cours !";
+	}
+}
 
 
 
@@ -124,4 +141,11 @@ echo "\r\n";
 echo $adam->getForce();
 echo "\r\n";
 echo $marcelline->getForce();
+echo "\r\n";
+echo $marcelline->faireEnfant();
+echo "\r\n";
+//echo $adam->faireEnfant();
+echo $marcelline->courir();
+echo "\r\n";
+$toto = new Humain("tata");
 echo "\r\n";
