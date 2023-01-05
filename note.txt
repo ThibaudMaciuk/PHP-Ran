@@ -13,3 +13,6 @@ Composer.json:
 
 Composer.lock:
     Composer.lock est le fichier ou on stocke les version exacte des depandance du projet.
+
+Autoloading:
+    l'autoloading sert a charger automatiquement les dependance ainsi que leur dependance dans le projet.
