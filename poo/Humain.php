@@ -1,10 +1,24 @@
 <?php
-abstract class Humain
+
+
+interface mammifere
+{
+	public function pilosité();
+}
+
+
+abstract class Humain implements mammifere
 {
 	use bipede;
 	public static $population = 0;
 	public $force = 1;
 	private $secret;
+
+	public function pilosité()
+	{
+		echo "J'ai du poil";
+	}
+
 	public function setSecret($secret)
 	{
 		$this->secret = $secret;
@@ -65,6 +79,10 @@ class Femme extends Humain
 	public function faireEnfant()
 	{
 		echo'Oui je peux enfanté';
+	}
+	public function pilosité()
+	{
+		echo "J’ai moins de poil que homme";
 	}
 }
 
@@ -147,5 +165,7 @@ echo "\r\n";
 //echo $adam->faireEnfant();
 echo $marcelline->courir();
 echo "\r\n";
-$toto = new Humain("tata");
+echo $marcelline->pilosité();
+//Ne marche pas car impossible d'instancier des classe abstraite -> $toto = new Humain("tata");
 echo "\r\n";
+echo $adam->pilosité();
