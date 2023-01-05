@@ -12,7 +12,7 @@ class Whale extends Animal
     }
     protected function getNoise()
     {
-        return "blub";
+        return "splash";
     }
 }
 

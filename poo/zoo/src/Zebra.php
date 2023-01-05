@@ -13,7 +13,7 @@ class Zebra extends Animal
     {
         // return the zebra noise
 
-        return "Bruit de zebre";
+        return "hiiiii";
     }
 }
 ?>

@@ -14,7 +14,7 @@ class Dove extends Animal
     {
         // return the zebra noise
 
-        return "coo coo";
+        return "Rou Rouuu";
     }
 }
 

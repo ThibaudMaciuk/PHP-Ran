@@ -13,7 +13,7 @@ class BubbleFish extends Animal
     }
     protected function getNoise()
     {
-        return "blub";
+        return "bloubloublou";
     }
 }
 

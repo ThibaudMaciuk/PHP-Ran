@@ -13,7 +13,7 @@ class Parrot extends Animal
     protected function getNoise()
     {
 
-        return "Bruit de perroquet";
+        return "coco";
     }
 }
 

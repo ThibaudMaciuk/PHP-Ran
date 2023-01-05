@@ -12,7 +12,7 @@ class CatFish extends Animal
     }
     protected function getNoise()
     {
-        return "blub";
+        return "bloubloublou";
     }
 }
 

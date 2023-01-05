@@ -12,7 +12,7 @@ class Elephant extends Animal
     }
     protected function getNoise()
     {
-        return " trompe";
+        return "toooooout";
     }
 }
 
