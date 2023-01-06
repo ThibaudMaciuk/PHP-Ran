@@ -1,4 +1,5 @@
 <?php
+namespace App;
 class Zebra extends Animal
 {
     public function __construct($name)

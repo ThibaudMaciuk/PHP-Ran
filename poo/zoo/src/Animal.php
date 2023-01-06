@@ -1,5 +1,5 @@
 <?php
-
+namespace App;
 abstract class Animal
 {
     private function __construct($name)

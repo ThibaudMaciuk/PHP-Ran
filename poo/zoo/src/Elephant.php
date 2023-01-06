@@ -1,5 +1,5 @@
 <?php
-
+namespace App;
 class Elephant extends Animal
 {
     public function __construct($name)

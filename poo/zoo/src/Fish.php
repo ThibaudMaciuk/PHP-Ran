@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Animal.php';
+namespace App;
 class Fish extends Animal
 {
     public function __construct($name)

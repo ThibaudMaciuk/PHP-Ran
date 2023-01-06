@@ -1,5 +1,5 @@
 <?php
-
+namespace App;
 class CatFish extends Animal
 {
     public function __construct($name)

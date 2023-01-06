@@ -1,5 +1,5 @@
 <?php
-
+namespace App;
 class Dove extends Animal
 {
     public function __construct($name)
