@@ -10,7 +10,7 @@ function add_to_array(int $x, string $y, string $name_class, array $array)
         $name = $y . $x;
         $o = new $name_class($name);
         $array[$name] = $o->noise();
-        echo $o->noise();
+        //echo $o->noise();
     }
 }
 
