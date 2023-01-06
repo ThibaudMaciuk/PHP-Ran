@@ -23,7 +23,7 @@ add_to_array(1, 'poissonClown', ClownFish::class, $array);
 add_to_array(2, 'Elephant', Elephant::class, $array);
 add_to_array(1, 'Zebre', Zebra::class, $array);
 add_to_array(2, 'Dove', Dove::class, $array);
-
+var_dump($array);
 foreach ($array as $key=>$animal)
 {
     echo $key . '->' . $animal .PHP_EOL;
