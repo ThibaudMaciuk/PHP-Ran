@@ -1,6 +1,6 @@
 <?php
 
-use Animal;
+require_once 'Animal.php';
 class Fish extends Animal
 {
     public function __construct($name)

@@ -2,14 +2,16 @@
 require __DIR__ . '/vendor/autoload.php';
 
 // Here comes your code.*
-use App\Fish;
-use App\BubbleFish;
-use App\CatFish;
-use App\ClownFish;
-use App\Elephant;
-use App\Zebra;
-use App\Parrot;
-use App\Dove;
+require_once 'src\Fish.php';
+require_once 'src\BubbleFish.php';
+require_once 'src\CatFish.php';
+require_once 'src\ClownFish.php';
+require_once 'src\Elephant.php';
+require_once 'src\Zebra.php';
+require_once 'src\Parrot.php';
+require_once 'src\Dove.php';
+
+
 $array[] = array(); 
 $poisson1 = new Fish();
 $poisson2 = new Fish();
