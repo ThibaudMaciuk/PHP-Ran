@@ -1,7 +1,5 @@
 <?php
 namespace App;
-
-
 abstract class Animal
 {
     protected $name;
