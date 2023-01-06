@@ -6,8 +6,8 @@ Class enclosure
     {
         $this->animals[] = $animal;
     }
-    public function toString()
+    public function __toString()
     {
-        
+        return "";
     }
 }
