@@ -1,5 +1,6 @@
 <?php
 
+use Animal;
 class Fish extends Animal
 {
     public function __construct($name)
