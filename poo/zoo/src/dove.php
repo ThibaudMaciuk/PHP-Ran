@@ -13,7 +13,6 @@ class Dove extends Animal
     protected function getNoise()
     {
         // return the zebra noise
-
         return "Rou Rouuu";
     }
 }
