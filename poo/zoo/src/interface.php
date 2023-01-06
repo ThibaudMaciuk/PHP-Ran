@@ -1,14 +1,5 @@
 <?php
-
-interface CanSwim
-{
-
-}
-interface CanFly
-{
-
-}
-interface CanWalk
-{
-
-}
+namespace App;
+interface CanSwim { }
+interface CanFly { }
+interface CanWalk { }
