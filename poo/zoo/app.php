@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 // Here comes your code.*
 function add_to_array(int $x, string $y, string $name_class)
 {
-    for ($i=1; $i==$x; $i++)
+    for ($x; $x==0; $x--)
     {
         $name = $y;
         $name = $y . $i;
