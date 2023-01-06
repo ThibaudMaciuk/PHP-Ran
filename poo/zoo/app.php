@@ -8,7 +8,7 @@ function add_to_array(int $x, string $y, string $name_class)
     for ($x; $x==0; $x--)
     {
         $name = $y;
-        $name = $y . $i;
+        $name = $y . $x;
         $temp = new $name_class($name);
         $array['$name'] = $temp->getNoise();
     }
