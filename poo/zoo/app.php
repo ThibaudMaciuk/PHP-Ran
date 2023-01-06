@@ -3,32 +3,28 @@ namespace App;
 require __DIR__ . '/vendor/autoload.php';
 
 // Here comes your code.*
-function add_to_array(int $x, string $y, string $name_class,)
+function add_to_array(int $x, string $y, string $name_class, array $array)
 {
-    global $array;
-    for ($i=0; $i==$x; $i++)
+    for ($i=0; $i<$x; $i++)
     {
-        $name = $y;
-        return 'delcaration de name';
         $name = $y . $x;
-        $name = new $name_class($this->name);
-        $array[$name->getName($name)] = $name->getNoise($name);
+        $o = new $name_class($name);
+        $array[$name] = $o->noise();
+        echo $o->noise();
     }
 }
 
-$array = ["a" => "b", "c" => "d", "e" => "f"];
-add_to_array(10, 'Parrot', 'Parrot', $array);
-add_to_array(5, 'poisson', 'Fish', $array);
-add_to_array(3, 'poissonBulle', 'BubbleFish', $array);
-add_to_array(2, 'poissonChat', 'CatFish', $array);
-add_to_array(1, 'poissonClown', 'ClownFish', $array);
-add_to_array(2, 'Elephant', 'Elephant', $array);
-add_to_array(1, 'Zebre', 'Zebra', $array);
-add_to_array(2, 'Dove', 'Dove', $array);
-
+$array = [];
+add_to_array(10, 'Parrot', Parrot::class, $array);
+add_to_array(5, 'poisson', Fish::class, $array);
+add_to_array(3, 'poissonBulle', BubbleFish::class, $array);
+add_to_array(2, 'poissonChat', CatFish::class, $array);
+add_to_array(1, 'poissonClown', ClownFish::class, $array);
+add_to_array(2, 'Elephant', Elephant::class, $array);
+add_to_array(1, 'Zebre', Zebra::class, $array);
+add_to_array(2, 'Dove', Dove::class, $array);
 
 foreach ($array as $key=>$animal)
 {
-    echo $key . '->' . $animal ;
-    echo ''.PHP_EOL;
+    echo $key . '->' . $animal .PHP_EOL;
 }

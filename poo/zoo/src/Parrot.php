@@ -6,17 +6,9 @@ class Parrot extends Animal
     {
         parent::__construct($name);
     }
-    public function noise()
-    {
-        return parent::noise() . " " . $this->getNoise();
-    }
     protected function getNoise()
     {
         return "coco";
-    }
-    public function getName()
-    {
-        return $this->name;
     }
 }
 
