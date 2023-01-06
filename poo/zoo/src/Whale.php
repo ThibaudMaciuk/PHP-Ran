@@ -14,6 +14,10 @@ class Whale extends Animal
     {
         return "splash";
     }
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 
 ?>

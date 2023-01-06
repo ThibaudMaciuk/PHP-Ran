@@ -16,5 +16,9 @@ class Zebra extends Animal
 
         return "hiiiii";
     }
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 ?>

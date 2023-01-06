@@ -12,8 +12,11 @@ class Parrot extends Animal
     }
     protected function getNoise()
     {
-
         return "coco";
+    }
+    public function getName()
+    {
+        return $this->name;
     }
 }
 

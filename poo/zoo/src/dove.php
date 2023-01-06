@@ -15,6 +15,10 @@ class Dove extends Animal
         // return the zebra noise
         return "Rou Rouuu";
     }
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 
 ?>

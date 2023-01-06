@@ -15,6 +15,10 @@ class BubbleFish extends Animal
     {
         return "bloubloublou";
     }
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 
 ?>

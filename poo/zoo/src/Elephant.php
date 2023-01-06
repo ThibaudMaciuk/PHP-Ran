@@ -14,6 +14,10 @@ class Elephant extends Animal
     {
         return "toooooout";
     }
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 
 ?>
