@@ -1,7 +1,7 @@
 <?php
 namespace App;
 
-class ClownFish extends Animal
+class ClownFish extends Animal implements CanSwim
 {
     public function __construct($name)
     {
