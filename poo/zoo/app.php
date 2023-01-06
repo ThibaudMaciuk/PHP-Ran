@@ -9,7 +9,8 @@ function add_to_array(int $x, string $y, string $name_class, array $array)
     {
         $name = $y;
         $name = $y . $x;
-        $array["$name"] = new $name_class($name);
+        $name = new $name_class($name);
+        $array[$name->getName($name)] = $name->getNoise($name);
     }
 }
 
@@ -23,7 +24,7 @@ add_to_array(1, 'Zebre', 'Zebra', $array);
 add_to_array(10, 'Parrot', 'Parrot', $array);
 add_to_array(2, 'Dove', 'Dove', $array);
 
-foreach ($array as $animal)
+foreach ($array as $key=>$animal)
 {
-    echo $animal->getName($animal) . '' . $animal->getNoise($animal);
+    echo $key . ' ' . $animal ;
 }
